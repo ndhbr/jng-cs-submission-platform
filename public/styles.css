@@ -12,6 +12,11 @@ h1 {
     text-align: center;
 }
 
+h1 a {
+    text-decoration: none;
+    color: #04AA6D;
+}
+
 .header {
     text-align: center;
 }
@@ -20,13 +25,72 @@ h1 {
     margin-bottom: 0;
 }
 
+/* Default style for large screens */
 .container {
     width: 75%;
     margin: 0 auto;
 }
 
+@media (max-width: 575.98px) {
+    .container {
+        width: 95%; /* Use most of the screen width */
+        padding: 10px; /* Add some padding for better appearance */
+    }
+
+    .hide-on-sm {
+        display: none !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .hide-on-sm {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 75%;
+    }
+}
+
+
 .content {
     margin: 64px auto;
+}
+
+hr {
+    margin: 32px 8px;
+    color: #a3a3a3;
+}
+
+.footer {
+    text-align: center;
+    margin: 16px;
+    font-size: 0.9rem;
+    color: #a3a3a3;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #04AA6D;
 }
 
 .group-element {
@@ -91,10 +155,6 @@ input[type=password]:focus {
     border-radius: 0;
     outline: 2px solid #04AA6D;
     border: none;
-}
-
-hr {
-    margin: 16px 0;
 }
 
 /* Alert box */
@@ -171,21 +231,21 @@ input[type="file"] {
 }
 
 input[type="file"]::file-selector-button {
-  border-radius: 0px;
-  padding: 15px 26px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: white;
-  border: 1px solid #04AA6D;
-  margin-right: 16px;
+    border-radius: 0px;
+    padding: 15px 26px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #04AA6D;
+    margin-right: 16px;
 }
 
 /* file upload button hover state */
 input[type="file"]::file-selector-button:hover {
-  background-color: #f3f4f6;
+    background-color: #f3f4f6;
 }
 
 /* file upload button active state */
 input[type="file"]::file-selector-button:active {
-  background-color: #e5e7eb;
+    background-color: #e5e7eb;
 }

@@ -33,7 +33,7 @@ function getUploadMiddleware() {
 
             // Password check
             if (!checkPassword(groupId, password)) {
-                return cb(new Error('Ungültiges Passwort'));
+                return cb(new Error('Ungültiges Passwort. Bitte überprüfe die Schreibweise und die gewählte Gruppe.'));
             }
 
             // Date check

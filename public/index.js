@@ -49,12 +49,12 @@
                         </p>
                     
                         <div class="group-element-buttons">
-                            <button class="button button-outlined open-modal" data-content="${group.id}">
+                            <button class="button button-outlined open-modal hide-on-sm" data-content="${group.id}">
                                 + Hochladen
                             </button>
                             <a href="${group.url}" target="_blank">
                                 <button class="button" ${(group.url.length == 0) ? 'disabled' : null}>
-                                    > Ansehen
+                                    > <span class="hide-on-sm">Ansehen</span>
                                 </button>
                             </a>
                         </div>
