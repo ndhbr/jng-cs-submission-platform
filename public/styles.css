@@ -143,6 +143,7 @@ hr {
 
 .modal-submit {
     margin-top: 8px 0;
+    float: right;
 }
 
 .close {
@@ -161,4 +162,30 @@ hr {
 
 .upload-form-heading {
     margin-bottom: 8px;
+}
+
+/* file upload button */
+input[type="file"] {
+    display: block;
+    width: 100%;
+}
+
+input[type="file"]::file-selector-button {
+  border-radius: 0px;
+  padding: 15px 26px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #04AA6D;
+  margin-right: 16px;
+}
+
+/* file upload button hover state */
+input[type="file"]::file-selector-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* file upload button active state */
+input[type="file"]::file-selector-button:active {
+  background-color: #e5e7eb;
 }
