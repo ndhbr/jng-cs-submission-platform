@@ -1,0 +1,130 @@
+{
+    "submission_date": "2024-07-10T20:00:00.000Z",
+    "classes": [
+        {
+            "id": "7a",
+            "groups": [
+                {
+                    "id": "7a-gruppe-1",
+                    "name": "Gruppe 1",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7a-gruppe-2",
+                    "name": "Gruppe 2",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7a-gruppe-3",
+                    "name": "Gruppe 3",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7a-gruppe-4",
+                    "name": "Gruppe 4",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7a-gruppe-5",
+                    "name": "Gruppe 5",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7a-gruppe-6",
+                    "name": "Gruppe 6",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7a-gruppe-7",
+                    "name": "Gruppe 7",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7a-gruppe-8",
+                    "name": "Gruppe 8",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7a-gruppe-9",
+                    "name": "Gruppe 9",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7a-gruppe-10",
+                    "name": "Gruppe 10",
+                    "password": "REPLACE"
+                }
+            ]
+        },
+        {
+            "id": "7b",
+            "groups": [
+                {
+                    "id": "7b-gruppe-1",
+                    "name": "Gruppe 1",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7b-gruppe-2",
+                    "name": "Gruppe 2",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7b-gruppe-3",
+                    "name": "Gruppe 3",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7b-gruppe-4",
+                    "name": "Gruppe 4",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7b-gruppe-5",
+                    "name": "Gruppe 5",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7b-gruppe-6",
+                    "name": "Gruppe 6",
+                    "password": "REPLACE"
+                }
+            ]
+        },
+        {
+            "id": "7c",
+            "groups": [
+                {
+                    "id": "7c-gruppe-1",
+                    "name": "Gruppe 1",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7c-gruppe-2",
+                    "name": "Gruppe 2",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7c-gruppe-3",
+                    "name": "Gruppe 3",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7c-gruppe-4",
+                    "name": "Gruppe 4",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7c-gruppe-5",
+                    "name": "Gruppe 5",
+                    "password": "REPLACE"
+                },
+                {
+                    "id": "7c-gruppe-6",
+                    "name": "Gruppe 6",
+                    "password": "REPLACE"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbfbfb;
+}
+
+h1 {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 0;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.content {
+    margin: 64px auto;
+}
+
+.group-element {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+    border: 1px solid #f3f3f3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.group-element p {
+    margin: 0;
+}
+
+.button {
+    background-color: #04AA6D;
+    border: 1px solid transparent;
+    color: white;
+    padding: 15px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:disabled,
+button[disabled] {
+    opacity: 0.2;
+    cursor: default;
+}
+
+.button:hover {
+    background-color: #029861;
+    color: white;
+}
+
+.button-outlined {
+    background-color: transparent;
+    border: 1px solid #04AA6D;
+    color: black;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    outline: 2px solid black;
+    border: none;
+    font-size: 18px;
+}
+
+input[type=password]:focus {
+    border-radius: 0;
+    outline: 2px solid #04AA6D;
+    border: none;
+}
+
+hr {
+    margin: 16px 0;
+}
+
+/* Alert box */
+.alert {
+    padding: 20px;
+    color: white;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.alert-success {
+    display: block;
+    background-color: #04AA6D;
+}
+
+.alert-warning {
+    display: block;
+    background-color: #aa0404;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.modal-submit {
+    margin-top: 8px 0;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.upload-form-heading {
+    margin-bottom: 8px;
+}

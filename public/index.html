@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JNG: Informatik 7</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>JNG: Informatik 7</h1>
+            <small>Abschlussprojekt: Eine eigene Website</small>
+        </div>
+        <div class="content">
+            <h2>Allgemein</h2>
+
+            <div class="alert" id="alertbox"></div>
+
+            <p>
+                Wählt eure Klasse und Gruppe aus und ladet eure Website hoch. 💻 Bis zum Einsendeschluss könnt ihr eure
+                Website beliebig oft aktualisieren. 👍🏼 Die zuletzt hochgeladene Version wird benotet. 😉
+                <br />
+                <br />
+                <b>Einsendeschluss:</b> <span id="last-submission-date"></span>
+            </p>
+
+            <hr />
+
+            <div id="groups"></div>
+        </div>
+    </div>
+
+    <!-- Upload form -->
+    <div id="upload-form" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="upload-form-heading">Website hochladen</h2>
+            <small><b>Gruppe:</b> <span id="modal-group-name"></span></small>
+
+            <form method="post" action="/upload" enctype="multipart/form-data">
+                <input type="hidden" name="groupId" id="id" />
+
+                <h3>1. Gib das Passwort deiner Gruppe ein:</h3>
+                <input type="password" id="password" name="password" placeholder="Passwort" />
+
+                <h3>2. Wähle deine HTML-Datei(en) aus:</h3>
+                <input type="file" id="files" name="files" accept=".html" multiple>
+
+                <hr />
+                <button type="submit" class="button modal-submit">✓ Hochladen</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
