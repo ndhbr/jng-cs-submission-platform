@@ -34,7 +34,7 @@
 
             domGroups.innerHTML = '';
             for (const classObj of classes) {
-                domGroups.innerHTML += `<h2>Klasse ${classObj.id.toUpperCase()}</h2>`;
+                domGroups.innerHTML += `<h2>🧑‍🎓 Klasse ${classObj.id.toUpperCase()}</h2>`;
                 const groups = classObj.groups;
 
                 for (const group of groups) {
