@@ -52,7 +52,7 @@
                             <button class="button button-outlined open-modal hide-on-sm" data-content="${group.id}">
                                 + Hochladen
                             </button>
-                            <a href="${group.url}" target="_blank">
+                            <a href="${group.url}">
                                 <button class="button" ${(group.url.length == 0) ? 'disabled' : null}>
                                     > <span class="hide-on-sm">Ansehen</span>
                                 </button>

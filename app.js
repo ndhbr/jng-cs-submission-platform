@@ -12,7 +12,7 @@ app.use(express.static('public'));
 // Configuration
 const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 const publicPath = 'public';
-const uploadPath = 's';
+const uploadPath = 'submissions';
 const lastUpdatedFilename = '.last_updated';
 
 function checkPassword(groupId, inputPassword) {
@@ -92,7 +92,7 @@ function getSubmissionUrl(groupId) {
     const folder = path.join(__dirname, publicPath, uploadPath, groupId);
 
     if (fs.existsSync(folder)) {
-        return path.join(uploadPath, groupId);
+        return groupId;
     } else {
         return '';
     }
@@ -136,6 +136,14 @@ app.post('/upload', (req, res, next) => {
 
         res.redirect('/?msg=Website+erfolgreich+hochgeladen.+:)&type=success');
     });
+});
+
+app.get('/:name', (req, res) => {
+    const name = req.params.name;
+    const filePath = path.join(__dirname, 'public', 'preview.html');
+
+    res.set({ 'content-type': 'text/html; charset=utf-8' });
+    res.sendFile(filePath);
 });
 
 // Error handling middleware

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNG: Informatik 7</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="preview">
+    <div class="preview-navbar">
+        <a href="/"><button class="button preview-back-button">← Zurück</button></a>
+        <div class="preview-title">
+            <h3 id="preview-group-name">-</h3>
+        </div>
+    </div>
+
+    <div class="preview-iframe-container">
+        <iframe src="s/7a-gruppe-1" class="preview-iframe" id="preview-iframe">
+            Fehler beim Laden der Seite.
+        </iframe>
+    </div>
+
+    <script>
+        const pathSegments = window.location.pathname.split('/');
+        const name = pathSegments[pathSegments.length - 1];
+        document.getElementById('preview-group-name').textContent = name;
+        document.getElementById('preview-iframe').src = `submissions/${name}`;
+    </script>
+</body>
+
+</html>
