@@ -4,6 +4,9 @@ services:
     build: .
     ports:
       - "8095:3000"
+    volumes:
+      - ./public/submissions:/usr/src/app/public/submissions
+      - ./config.json:/usr/src/app/config.json
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.jng.rule=Host(`jng.andi.ovh`)"
